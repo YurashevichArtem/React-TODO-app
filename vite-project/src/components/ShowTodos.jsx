@@ -12,7 +12,7 @@ export function ShowTodos({ data }) {
 
   return (
     <SectionElement>
-        { todos.map(({id, name, description, completed}, index) => <Todo key={id} id={id} name={name} description={description} completed={completed} data={...data}/>) }
+        { todos.map(({id, name, description, completed}, index) => <Todo key={id} id={id} name={name} description={description} completed={completed} data={{...data}}/>) }
     </SectionElement>
     )
 }
